@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+*::-webkit-scrollbar {
+    position: fixed;
+    left: 0;
+    background: transparent;
+    border: none;
+    height: 2.5px;
+    width: 2.5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: transparent
+}
+
+*::-webkit-scrollbar-thumb {
+    @apply bg-amber-500;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    opacity: .9;
+}

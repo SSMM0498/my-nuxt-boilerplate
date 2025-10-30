@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "description": "A platform for testing"
+  },
+  "welcome": "Welcome 👋!",
+  "home": "Home",
+  "sign_up": "Sign up",
+  "sign_in": "Sign in",
+  "dashboard": "Dashboard",
+  "login": {
+    "sliders": {
+      "title_1": "My Title 1",
+      "title_2": "My Title 2",
+      "title_3": "My Title 3",
+      "subtitle_1": "My Subtitle 1",
+      "subtitle_2": "My Subtitle 2",
+      "subtitle_3": "My Subtitle 3"
+    },
+    "welcome_back_please_enter_your_credentia": "Welcome back, please enter your credentials",
+    "dont_have_an_account_yet": "Don't have an account yet?",
+    "email": "Email",
+    "enter_your_email": "Enter your email",
+    "password": "Password",
+    "confirmPassword": "Confirm your password",
+    "remember_me": "Remember me",
+    "forgot_your_password": "Forgot your password?",
+    "or": "OR",
+    "sign_in_with_google": "Sign in with Google",
+    "sign_in_with_microsoft": "Sign in with Microsoft",
+    "sign_up": "Sign up",
+    "no_permission": "No permission",
+    "no_permission_message": "You do not have permission to access the modules",
+    "have_access_to_your_dashboard": "Have access to your dashboard",
+    "you_will_get_insight": "You will get insights and metrics on the go, so you can focus on your activity.",
+    "email_required": "Email is required",
+    "password_required": "Password is required",
+    "must_be_at_least_8_characters": "Must be at least 8 characters",
+    "invalid_email_or_password": "Invalid email or password"
+  },
+  "register": {
+    "sliders": {
+      "title_1": "Join Our Community",
+      "title_2": "Start Your Journey",
+      "title_3": "Get Started Today",
+      "subtitle_1": "Create an account and unlock amazing features",
+      "subtitle_2": "Connect with others and achieve your goals",
+      "subtitle_3": "Sign up now and experience the difference"
+    },
+    "create_your_account": "Create your account to get started",
+    "name": "Full Name",
+    "enter_your_name": "Enter your full name",
+    "name_required": "Name must be at least 2 characters",
+    "passwords_must_match": "Passwords must match",
+    "must_accept_terms": "You must accept the terms and conditions",
+    "i_accept_the": "I accept the",
+    "and": "and",
+    "sign_up_with_google": "Sign up with Google",
+    "sign_up_with_microsoft": "Sign up with Microsoft",
+    "already_have_an_account": "Already have an account?",
+    "registration_successful": "Registration successful",
+    "welcome_message": "Welcome! Your account has been created.",
+    "registration_failed": "Registration failed",
+    "email_already_exists": "This email is already registered. Please use a different email or try logging in."
+  },
+  "about": "About",
+  "privacy-policy": "Privacy Policy",
+  "terms": "Terms",
+  "help": "Help",
+  "reset-password": "Reset Password",
+  "enter-your-email-address-and-well-send-you-a-link-to-reset-your-password": "Enter your email address and we'll send you a link to reset your password.",
+  "send-reset-link": "Send Reset Link",
+  "remember-your-password": "Remember your password?",
+  "failed-to-send-reset-link-please-try-again": "Failed to send reset link. Please try again.",
+  "success": "Success",
+  "error": "Error",
+  "return-to-home": "Return to home",
+  "a-connection-code-will-be-sent-to-your-email-address": "A connection code will be sent to your email address",
+  "cancel": "Cancel",
+  "check-your-inbox-and-follow-the-instructions-to-reset-your-password": "Check your inbox and follow the instructions to reset your password.",
+  "close": "Close",
+  "connection-successful": "Connection successful",
+  "incorrect-login-details": "Incorrect login details",
+  "please-check-your-email-and-password": "Please check your email and password.",
+  "login-error": "Login error",
+  "an-error-has-occurred-please-try-again": "An error has occurred. Please try again.",
+  "avatar": {
+    "save": "Save avatar",
+    "upload": "Upload image",
+    "change": "Change image",
+    "remove": "Remove"
+  },
+  "errors": {
+    "selectOne": "Please select an image file.",
+    "imageTooLarge": "The image is too large. Please choose an image smaller than 2MB.",
+    "invalidImageType": "Please upload a valid image file (JPEG, PNG, or WebP).",
+    "invalidDimensions": "The image dimensions are invalid. Please upload an image between 200x200 and 4096x4096 pixels."
+  },
+  "date-picker": {
+    "date": "Date",
+    "select-a-date": "Select a date",
+    "select-a-date-and-time": "Select a date and time",
+    "period": "Period",
+    "date-and-time": "Date and Time",
+    "select-a-period": "Select a period"
+  },
+  "clear": "Clear",
+  "apply": "Apply",
+  "now": "Now",
+  "valid": "Valid",
+  "api-errors": {
+    "network-error": {
+      "title": "Connection issue",
+      "message": "Please check your internet connection and try again."
+    },
+    "timeout": {
+      "title": "Request timed out",
+      "message": "The request took too long. Please try again."
+    },
+    "bad-request": {
+      "title": "Invalid data",
+      "message": "The information provided is incorrect."
+    },
+    "not-found": {
+      "title": "Resource not found",
+      "message": "The requested item does not exist or has been deleted."
+    },
+    "too-many-requests": {
+      "title": "Too many requests",
+      "message": "Please wait before trying again."
+    },
+    "server-error": {
+      "title": "Server error",
+      "message": "An internal error occurred. Our team has been notified."
+    },
+    "service-unavailable": {
+      "title": "Service unavailable",
+      "message": "The service is temporarily unavailable. Please try again later."
+    },
+    "access-denied": {
+      "title": "Access denied",
+      "message": "You do not have the required permissions for this action."
+    },
+    "session-expired": {
+      "title": "Session expired",
+      "message": "Your session has expired. Please log in again."
+    },
+    "generic": {
+      "title": "Error",
+      "message": "An error occurred"
+    }
+  },
+  "password": {
+    "label": "Password",
+    "placeholder": "Password",
+    "show": "Show password",
+    "hide": "Hide password",
+    "must-contain": "Must contain",
+    "requirement-met": "Requirement met",
+    "requirement-not-met": "Requirement not met",
+    "strength": {
+      "empty": "Enter a password",
+      "weak": "Weak password",
+      "medium": "Medium password",
+      "strong": "Strong password"
+    },
+    "requirements": {
+      "min-length": "At least 8 characters",
+      "number": "At least 1 number",
+      "lowercase": "At least 1 lowercase letter",
+      "uppercase": "At least 1 uppercase letter"
+    }
+  },
+  "sidebar": {
+    "search": "Search...",
+    "menu": {
+      "home": "Home",
+      "inbox": "Inbox",
+      "contacts": "Contacts",
+      "settings": "Settings",
+      "general": "General",
+      "members": "Members",
+      "notifications": "Notifications",
+      "feedback": "Feedback",
+      "help-support": "Help & Support"
+    },
+    "logout": "Logout"
+  }
+}
