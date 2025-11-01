@@ -176,13 +176,168 @@
       "home": "Home",
       "inbox": "Inbox",
       "contacts": "Contacts",
+      "profile": "Profile",
+      "billing": "Billing",
+      "theme": "Theme",
       "settings": "Settings",
+      "dark": "Dark",
+      "light": "Light",
       "general": "General",
       "members": "Members",
+      "email": "Email",
       "notifications": "Notifications",
+      "security": "Security",
+      "doc": "Documentation",
+      "appearance": "Appearance",
       "feedback": "Feedback",
       "help-support": "Help & Support"
     },
     "logout": "Logout"
+  },
+  "members": {
+    "invite-people": "Invite people",
+    "invite-new": "Invite new members by email address.",
+    "search-members": "Search members"
+  },
+  "security": {
+    "password": {
+      "title": "Password",
+      "description": "Confirm your current password before setting a new one.",
+      "current-label": "Current password",
+      "current-placeholder": "Enter your current password",
+      "new-label": "New password",
+      "new-placeholder": "Enter your new password",
+      "update-button": "Update password",
+      "errors": {
+        "min-length": "Must be at least 8 characters",
+        "same-password": "New password must be different from current password"
+      },
+      "success": {
+        "title": "Password updated",
+        "description": "Your password has been successfully updated."
+      },
+      "error": {
+        "title": "Update failed",
+        "description": "Failed to update password. Please try again."
+      }
+    },
+    "delete-account": {
+      "title": "Delete Account",
+      "description": "No longer want to use our service? You can delete your account here. This action is not reversible. All information related to this account will be deleted permanently.",
+      "button": "Delete account",
+      "modal": {
+        "title": "Delete Account",
+        "description": "Are you sure you want to delete your account? This action cannot be undone.",
+        "warning-title": "Warning",
+        "warning-description": "All your data, including your profile, settings, and any associated information will be permanently deleted.",
+        "cancel": "Cancel",
+        "confirm": "Delete account"
+      },
+      "success": {
+        "title": "Account deleted",
+        "description": "Your account has been successfully deleted."
+      },
+      "error": {
+        "title": "Deletion failed",
+        "description": "Failed to delete account. Please try again."
+      }
+    }
+  },
+  "notifications": {
+    "channels": {
+      "title": "Notification channels",
+      "description": "Where can we notify you?",
+      "email": {
+        "label": "Email",
+        "description": "Receive a daily email digest."
+      },
+      "desktop": {
+        "label": "Desktop",
+        "description": "Receive desktop notifications."
+      }
+    },
+    "updates": {
+      "title": "Account updates",
+      "description": "Receive updates about your account.",
+      "weekly-digest": {
+        "label": "Weekly digest",
+        "description": "Receive a weekly digest of news."
+      },
+      "product-updates": {
+        "label": "Product updates",
+        "description": "Receive a monthly email with all new features and updates."
+      },
+      "important-updates": {
+        "label": "Important updates",
+        "description": "Receive emails about important updates like security fixes, maintenance, etc."
+      }
+    }
+  },
+  "settings": {
+    "profile": {
+      "title": "Profile",
+      "description": "This information will be displayed publicly.",
+      "save-button": "Save changes",
+      "fields": {
+        "name": {
+          "label": "Name",
+          "description": "Will appear on receipts, invoices, and other communication."
+        },
+        "email": {
+          "label": "Email",
+          "description": "Used to sign in, for email receipts and product updates."
+        },
+        "username": {
+          "label": "Username",
+          "description": "Your unique username for logging in and your profile URL."
+        },
+        "avatar": {
+          "label": "Avatar",
+          "description": "JPG, GIF or PNG. 1MB Max.",
+          "choose-button": "Choose"
+        },
+        "bio": {
+          "label": "Bio",
+          "description": "Brief description for your profile. URLs are hyperlinked."
+        }
+      },
+      "errors": {
+        "name-too-short": "Name must be at least 2 characters",
+        "invalid-email": "Invalid email address",
+        "username-too-short": "Username must be at least 2 characters"
+      },
+      "success": {
+        "title": "Success",
+        "description": "Your settings have been updated."
+      }
+    },
+    "email": {
+      "title": "Email Address",
+      "description": "Change your email address. You will receive a confirmation email at the new address.",
+      "current-label": "Current email",
+      "new-label": "New email",
+      "new-placeholder": "Enter your new email",
+      "confirm-label": "Confirm new email",
+      "confirm-placeholder": "Confirm your new email",
+      "update-button": "Request email change",
+      "errors": {
+        "invalid-email": "Invalid email address",
+        "emails-mismatch": "Email addresses do not match",
+        "same-email": "New email must be different from current email"
+      },
+      "success": {
+        "title": "Verification email sent",
+        "description": "Please check your inbox and follow the instructions to confirm your new email address."
+      },
+      "error": {
+        "title": "Request failed",
+        "description": "Failed to request email change. Please try again."
+      },
+      "info": {
+        "title": "Important Information",
+        "description": "About changing your email address",
+        "note": "When you request an email change, we will send a verification email to your new address. You must click the link in that email to complete the change. Your current email will remain active until the change is confirmed."
+      }
+    }
   }
 }

@@ -5,8 +5,7 @@ const open = ref(false)
 <template>
   <UDashboardGroup unit="rem">
     <DashboardSidebar v-model:open="open" />
-
-    <UDashboardSearch />
+    <NotificationsSlideover />
 
     <slot />
   </UDashboardGroup>
