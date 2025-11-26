@@ -6,10 +6,13 @@ type ButtonVariant = "outline" | "soft" | "subtle" | "ghost" | "solid" | "link"
 type ButtonSize = "xs" | "sm" | "md" | "lg" | "xl"
 
 const { t } = useI18n()
+const defaultLabel = t('date-picker.period')
+const defaultPlaceholderText = t('date-picker.select-a-period')
 
 const props = withDefaults(
     defineProps<{
         label?: string
+        showLabel?: boolean
         name?: string
         color?: ButtonColor
         variant?: ButtonVariant
@@ -21,14 +24,15 @@ const props = withDefaults(
         ui?: Record<string, any>
     }>(),
     {
-        label: t('date-picker.period'),
+        label: '',
         name: "date-range",
         color: "neutral",
         variant: "outline",
         size: "md",
+        showLabel: true,
         disabled: false,
         required: false,
-        placeholderText: t('date-picker.select-a-period'),
+        placeholderText: '',
         icon: "i-lucide-calendar-days",
         ui: () => ({}),
     }
@@ -124,7 +128,7 @@ const displayLabel = computed(() => {
     } else if (start.value) {
         return df.format(new Date(start.value))
     }
-    return props.placeholderText
+    return props.placeholderText ? props.placeholderText : defaultPlaceholderText
 })
 
 watch([start, end], ([newStart, newEnd]) => {
@@ -138,7 +142,7 @@ watch([start, end], ([newStart, newEnd]) => {
 </script>
 
 <template>
-    <UFormField :name="name" :label="label" :required="required">
+    <UFormField :name="name" :label="showLabel ? (label ? label : defaultLabel) : ''" :required="required">
         <UPopover v-model:open="showCalendar">
             <UButton :color="color" :variant="variant" :size="size" :disabled="disabled" :icon="icon"
                 class="group-[:has([id*='error'])]:focus-visible:ring-error group-[:has([id*='error'])]:ring-error w-full"

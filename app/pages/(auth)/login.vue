@@ -11,8 +11,8 @@
           icon: 'i-heroicons-arrow-right-20-solid',
         }" :loop="true" :arrows="true" :dots="true" :autoplay="{ delay: 5000 }">
         <div class="relative w-full h-full">
-          <img :src="item.url" :alt="item.title" class="w-full h-full object-cover">
-          <div class="absolute h-full w-full inset-0 bg-linear-to-b from-black via-black/50 to-transparent" />
+          <img :src="item.url" :alt="item.title" class="w-full h-screen object-cover">
+          <div class="absolute h-full w-full inset-0 bg-linear-to-b from-white via-white/50 dark:bg-linear-to-b dark:from-black dark:via-black/50 to-transparent" />
           <div class="absolute w-full h-full bottom-0 left-0 right-0 p-12 text-highlighted">
             <h2 class="text-4xl font-bold mb-4 font-sans">{{ item.title }}</h2>
             <p class="text-xl opacity-90 font-sans">{{ item.subtitle }}</p>

@@ -21,14 +21,14 @@ withDefaults(
         ui?: Record<string, any>
     }>(),
     {
-        label: t('date-picker.date'),
+        label: '',
         name: "date",
         color: "neutral",
         variant: "outline",
         size: "md",
         disabled: false,
         required: false,
-        placeholderText: t('date-picker.select-a-date'),
+        placeholderText: '',
         icon: "i-lucide-calendar-days",
         ui: () => ({}),
     }
@@ -67,7 +67,7 @@ const placeholder = shallowRef(modelDate.value ?? today(getLocalTimeZone()))
 </script>
 
 <template>
-    <UFormField :name="name" :label="label" :required="required">
+    <UFormField :name="name" :label="label !== '' ? label : t('date-picker.date')" :required="required">
         <UPopover v-model:open="showCalendar">
             <UButton :color="color" :variant="variant" :size="size" :disabled="disabled" :icon="icon"
                 class="group-[:has([id*='error'])]:focus-visible:ring-error group-[:has([id*='error'])]:ring-error w-full"
@@ -76,7 +76,7 @@ const placeholder = shallowRef(modelDate.value ?? today(getLocalTimeZone()))
                     <NuxtTime :datetime="modelDate.toDate(getLocalTimeZone())" date-style="medium" />
                 </template>
                 <template v-else>
-                    <span class="text-dimmed">{{ placeholderText }}</span>
+                    <span class="text-dimmed">{{ placeholderText !== '' ? placeholderText : t('date-picker.select-a-date') }}</span>
                 </template>
             </UButton>
 

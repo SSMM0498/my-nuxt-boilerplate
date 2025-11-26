@@ -23,14 +23,14 @@ withDefaults(
         maxValue?: Date
     }>(),
     {
-        label: t('date-picker.date-and-time'),
+        label: '',
         name: "datetime",
         color: "neutral",
         variant: "outline",
         size: "md",
         disabled: false,
         required: false,
-        placeholderText: t('date-picker.select-a-date-and-time'),
+        placeholderText: '',
         icon: "i-lucide-calendar-days",
         ui: () => ({}),
         minValue: undefined,
@@ -93,7 +93,7 @@ const displayValue = computed(() => {
 </script>
 
 <template>
-    <UFormField :name="name" :label="label" :required="required">
+    <UFormField :name="name" :label="label !== '' ? label : t('date-picker.date-and-time')" :required="required">
         <UPopover v-model:open="showCalendar">
             <UButton :color="color" :variant="variant" :size="size" :disabled="disabled" :icon="icon"
                 class="group-[:has([id*='error'])]:focus-visible:ring-error group-[:has([id*='error'])]:ring-error w-full"
@@ -102,7 +102,7 @@ const displayValue = computed(() => {
                     {{ displayValue }}
                 </template>
                 <template v-else>
-                    <span class="text-dimmed">{{ placeholderText }}</span>
+                    <span class="text-dimmed">{{ placeholderText !== '' ? placeholderText : t('date-picker.select-a-date-and-time') }}</span>
                 </template>
             </UButton>
 
